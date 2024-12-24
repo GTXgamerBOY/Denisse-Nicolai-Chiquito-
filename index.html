@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Self Map</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+            color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #FF6F91;
+        }
+        .header p {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: #ffffff;
+            background: linear-gradient(90deg, #FF6F91, #FFC3A0);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+        .section button:hover {
+            background: linear-gradient(90deg, #FF5974, #FFAA87);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .section button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .section-content {
+            display: none;
+            margin-top: 15px;
+            text-align: left;
+            font-size: 1rem;
+            line-height: 1.6;
+            padding: 15px;
+            background-color: #FFF7F0;
+            border: 1px solid #FFD5E5;
+            border-radius: 10px;
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        ul li {
+            margin: 8px 0;
+            padding: 10px;
+            background: #FFEBF3;
+            border-radius: 10px;
+            border: 1px solid #FFDBE9;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+    <script>
+        function toggleContent(sectionId) {
+            const content = document.getElementById(sectionId);
+            content.style.display = content.style.display === 'none' || content.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Denisse Nicolai Chiquito</h1>
+            <h2>15 years old</h2>
+            <p>Interactive Self Map</p>
+        </div>
+
+        <div class="section">
+            <button onclick="toggleContent('nickname')">Nicknames</button>
+            <div id="nickname" class="section-content">
+                <ul>
+                    <li>Denisse</li>
+                    <li>Denz</li>
+                    <li>Baby</li>
+                    <li>Love</li>
+                    <li>Baks</li>
+                    </ul>
+                    </div>
+
+                    <div class="section">
+                        <button onclick="toggleContent('birthday')">Birthday</button>
+                        <div id="birthday" class="section-content">
+                            <ul>
+                                <li>June 30, 2009</li>
+                                </ul>
+                                </div>
+
+                                <div class="section">
+                                    <button onclick="toggleContent('what-i-see-in-you')">What I see in you</button>
+                                    <div id="what-i-see-in-you" class="section-content">
+                                        <ul>
+                                            <li>Cute</li>
+                                            <li>Friendly Person</li>
+                                            <li>Madaldal :)</li>
+                                            <li>Matalino</li>
+                                            <li>Maganda</li>
+                                            <li>Mabait</li>
+                                            <li>Cute ng smile</li>
+                                            <li>Laging nagcrcrave ng foods</li>
+                                            <li>Malambing saken</li>
+                                            </ul>
+                                            </div>
+
+
+                           <div class="section">
+                                   <button onclick="toggleContent('favorite-foods')">Favorite Foods (hindi ako sure kung fav mo lahat)</button>
+                                   <div id="favorite-foods" class="section-content">                  
+                                        <ul>
+                                            <li>Ice Cream</li>
+                                            <li>Sushi</li>
+                                            <li>Chicken Wings</li>
+                                            <li>Shawarma</li>
+                                            <li>Shawarma Rice</li>
+                                            <li>French Fries</li>
+                                            <li>Quesadilla</li>
+                                            <li>Tacos</li>
+                                            <li>KFC Chicken</li>
+                                            <li>KFC Fries</li>
+                                            <li>KFC Twister Wraps?</li>
+                        
+
+                                        </ul>
+                        
+                            </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <button onclick="toggleContent('how-i-see-you-as-a-person')">How I see you as a person</button>
+                            <div id="how-i-see-you-as-a-person" class="section-content">
+                                <ul>
+                                    <li> I see you as such an amazing person. You're so friendly, loving, and caring. I admire how helpful and open-minded you are, and your intelligence never fails to impress me. You have the cutest smile, and I love how you always seem to be craving food it’s one of the little things that make you even more adorable to me.</li>
+                                </ul>
+                
+                
+                </ul>
+            </div>
+        </div>
+
+       
+
+    <footer>
+        &copy; 2024 Jhon Marc C. Bautista. All rights reserved.
+    </footer>
+</body>
+</html>
